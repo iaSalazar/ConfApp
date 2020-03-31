@@ -15,4 +15,9 @@ Porque en esta versión todo girará al rededor de la pregunta: ¿Qué habilidad
         \u0009 &#8226; Fecha: Sábado 3 de Agosto de 2019.\n
         \u0009 &#8226; Lugar: Centro Cultural Roberto Cantoral.\n
         \u0009 &#8226; Dirección: Puente Xoco s/n, Xoco, 03330 Ciudad de México, CDMX.</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut \n
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  \n
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore  \n
+        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt \n
+        mollit anim id est laborum.</string>
 </resources>

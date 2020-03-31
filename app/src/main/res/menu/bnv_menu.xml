@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navHomeFragment"
+        android:title="inicio"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/navEventFragment"
+        android:title="talks"
+        android:icon="@drawable/event"/>
+    <item
+        android:id="@+id/navSpeakersFragment"
+        android:title="speakers"
+        android:icon="@drawable/people"/>
+    <item
+        android:id="@+id/navMapFragment"
+        android:title="map"
+        android:icon="@drawable/map"/>
+</menu>
