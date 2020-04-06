@@ -1,22 +1,32 @@
-package com.demo.platziconf
+package com.demo.platziconf.view.ui.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
+import com.demo.platziconf.R
 import com.demo.platziconf.model.Conference
 import com.demo.platziconf.model.Speaker
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.gson.JsonObject
+import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    fun configNav(){
+
+        NavigationUI.setupWithNavController(bnvMenu, Navigation.findNavController(this,R.id.fragContainer))
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setActionBar(findViewById(R.id.toolBarMain))
+        configNav()
 
-        val jsonArr = JSONArray("[\n" +
+        /*val jsonArr = JSONArray("[\n" +
                 "            {\n" +
                 "                'biography' : 'Cesar Fajardo, creativo y content creator del equipo de Platzi, transforma las ideas en historias inspiradoras y contenidos innovadores que impactan al mundo para generar gracias, no solo likes, de nada sirve tu talento si no estas haciendo algo con el, de nada sirven tus habilidades si no tienes ideas para fusionarlas.',\n" +
                 "                'category' : 5,\n" +
@@ -332,6 +342,6 @@ class MainActivity : AppCompatActivity() {
 
             firebaseFirestore.collection("conferences").document().set(conference)
 
-        }
+        }*/
     }
 }

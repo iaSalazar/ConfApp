@@ -13,6 +13,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/SpeakerPic"
             android:layout_width="match_parent"
             android:layout_height="@dimen/altoImageViewHome"
             android:src="@mipmap/ic_launcher"
@@ -22,6 +23,7 @@
 
 
         <TextView
+            android:id="@+id/SpeakerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/marginHomeSubtitulo"
@@ -35,6 +37,7 @@
 
 
         <TextView
+            android:id="@+id/SpeakerWork"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/marginHomeSubtitulo"

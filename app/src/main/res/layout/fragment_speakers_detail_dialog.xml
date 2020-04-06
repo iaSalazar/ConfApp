@@ -9,6 +9,7 @@
         android:layout_height="wrap_content">
 
         <Toolbar
+            android:id="@+id/tbSpeakerDetail"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -36,6 +37,7 @@
                         android:background="@color/colorPrimary"
                         android:alpha="0.3"/>
                     <ImageView
+                        android:id="@+id/ivPictureSpeaker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@mipmap/ic_launcher"
@@ -59,7 +61,19 @@
                         android:background="@drawable/shape_parrafo">
 
                         <TextView
-                            android:id="@+id/tvDetailConferenceHour"
+                            android:id="@+id/tvNameSpeaker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Trabajo"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/tvJobTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="job title"
@@ -70,7 +84,7 @@
                             android:gravity="center_horizontal"
                             android:layout_margin="5dp"/>
                         <TextView
-                            android:id="@+id/tvDetailConferenceSpeaker"
+                            android:id="@+id/tvWorkSpeaker"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Trabajo"
@@ -82,13 +96,14 @@
                             android:layout_margin="5dp"
                             android:textStyle="bold"/>
                         <ImageView
+                            android:id="@+id/ivSpeakerTwitter"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_icons_twitter"
                             android:layout_gravity="center_horizontal"/>
 
                         <TextView
-                            android:id="@+id/tvDetailConferenceTag"
+                            android:id="@+id/tvSpeakerBio"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
