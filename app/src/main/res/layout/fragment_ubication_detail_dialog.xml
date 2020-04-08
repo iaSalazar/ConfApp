@@ -16,7 +16,8 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -50,6 +51,7 @@
 
                         <TextView
 
+                            android:id="@+id/tvUbicationName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Lugar PlatziConf"
@@ -74,7 +76,7 @@
                                 android:src="@drawable/pin"
                                 />
                             <TextView
-                                android:id="@+id/tvDetailConferenceSpeaker"
+                                android:id="@+id/tvUbicationAdress"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Dirección"
@@ -92,6 +94,7 @@
                             android:background="@color/colorPrimary"/>
 
                         <LinearLayout
+                            android:id="@+id/llTelefonoLugar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -104,7 +107,7 @@
                                 android:src="@drawable/ic_phone_black_24dp"
                                 />
                             <TextView
-
+                                android:id="@+id/tvUbicationPhone"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Telefono"
@@ -121,6 +124,8 @@
                             android:layout_height="1dp"
                             android:background="@color/colorPrimary"/>
                         <LinearLayout
+
+                            android:id="@+id/llWeb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -133,7 +138,7 @@
                                 android:src="@drawable/ic_link_black_24dp"
                                 />
                             <TextView
-
+                                android:id="@+id/tvUbicationWeb"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="web"
